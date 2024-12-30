@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package DAY02;
 
 import java.util.Scanner;
@@ -16,3 +17,23 @@ public class SwapUsingXOR {
         System.out.println("n2="+n2);
     }
 }
+=======
+package DAY02;
+
+import java.util.Scanner;
+
+public class SwapUsingXOR {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter n1=");
+        int n1= sc.nextInt();
+        System.out.println("Enter n2=");
+        int n2=sc.nextInt();
+        n1=n1^n2;
+        n2=n1^n2;
+        n1=n1^n2;
+        System.out.println("n1="+n1);
+        System.out.println("n2="+n2);
+    }
+}
+>>>>>>> 6dcaddd8bd1fefda478f86ae604161571a2f6db1
