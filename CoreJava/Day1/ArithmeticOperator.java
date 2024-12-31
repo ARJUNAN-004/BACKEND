@@ -1,5 +1,6 @@
-package DAY01;
+//Write a program that takes two integers from the user and performs all arithmetic operations, printing each result.
 
+package DAY01;
 import java.util.Scanner;
 
 public class ArithmeticOperator {

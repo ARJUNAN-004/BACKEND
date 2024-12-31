@@ -1,3 +1,6 @@
+//Declare variables of all primitive types and print them.
+//Convert a double to an int and print the result.
+
 package DAY01;
 
 public class PrimitiveDataType {

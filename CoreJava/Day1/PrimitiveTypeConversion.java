@@ -1,3 +1,6 @@
+//Write a program that takes a float as input, converts it to int, and displays both values.
+//Try a case where narrowing conversion loses precision (e.g., casting 123.456 to int).
+
 package DAY01;
 
 public class PrimitiveTypeConversion {

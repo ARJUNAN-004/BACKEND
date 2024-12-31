@@ -1,3 +1,7 @@
+
+//Create a program that reads two integers and prints whether the first number is greater than the second using relational operators.
+//Use logical operators to combine multiple conditions.
+
 package DAY01;
 
 public class LogicalRelational {
