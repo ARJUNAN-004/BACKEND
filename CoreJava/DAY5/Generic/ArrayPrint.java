@@ -1,3 +1,6 @@
+//Write a generic method printArray(T[] array) to print elements of any array type. Test it with arrays of String, Integer, and Double.
+
+
 package DAY05.Generic;
 
 import java.util.List;

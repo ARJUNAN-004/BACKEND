@@ -1,3 +1,6 @@
+//Create a generic class Pair<K, V> to hold a key-value pair. Write a program to store and display pairs of different data types, like <String, Integer> or <Integer, String>.
+
+
 package DAY05.Generic;
 
 public class Pair <K,V>{
