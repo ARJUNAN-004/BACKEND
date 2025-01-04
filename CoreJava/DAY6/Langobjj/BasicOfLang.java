@@ -19,11 +19,12 @@ public class BasicOfLang {
 
         System.out.println("--calculate time--\n");
         int sum=0;
-        System.out.println("Before Loop = "+System.currentTimeMillis());
+        long srt=System.currentTimeMillis();
         for (int i=0;i<10;i++){
             sum+=i;
         }
         System.out.println(sum);
-        System.out.println("After Loop = "+System.currentTimeMillis());
+        long end=System.currentTimeMillis();
+        System.out.println("After Loop = "+(srt-end));
     }
 }
