@@ -1,0 +1,38 @@
+package DAY13;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class FactorialTest {
+    @Test
+   public void findfact1() {
+        Factorial f=new Factorial();
+        long f1=f.findfact(0);
+        assertEquals(1,f1);
+    }
+    @Test
+    public void findfact2() {
+        Factorial f=new Factorial();
+        long f2=f.findfact(1);
+        assertEquals(1,f2);
+    }
+    @Test
+    public void findfact3() {
+        Factorial f=new Factorial();
+        long f3=f.findfact(5);
+        assertEquals(120,f3);
+    }
+    @Test
+    public void findfact4() {
+        Factorial f=new Factorial();
+        long f4=f.findfact(10);
+        assertEquals(3628800,f4);
+    }
+    @Test
+    public void findfact5() {
+        Factorial f=new Factorial();
+        long f5=f.findfact(-10);
+        assertEquals(-1,f5);
+    }
+}
