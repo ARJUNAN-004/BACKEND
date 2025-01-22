@@ -1,8 +1,8 @@
 package DAY16;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class StartwithLetter {
     public StartwithLetter(){
@@ -13,8 +13,13 @@ public class StartwithLetter {
         System.out.println("Output ="+newNames);
     }
     public List<String> firstLetter(List<String> names, Predicate<String> predicate){
-        return names.stream().filter(predicate).collect(Collectors.toList());
-    }
+        List<String> filteredNames = new ArrayList<>();
+        for (String name : names) {
+            if (predicate.test(name)) {
+                filteredNames.add(name);
+            }
+        }
+        return filteredNames;    }
     public static void main(String[] args) {
 new StartwithLetter();
 

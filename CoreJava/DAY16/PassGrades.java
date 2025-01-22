@@ -1,11 +1,8 @@
 package DAY16;
 
-import DAY15.StudentSort;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class PassGrades {
     String name;
@@ -15,8 +12,13 @@ public class PassGrades {
         this.name=name;
     }
     public static List<PassGrades> passGradesList(List<PassGrades> marks, Predicate<PassGrades> predicate){
-        return marks.stream().filter(predicate).collect(Collectors.toList());
-    }
+        List<PassGrades> filteredGrades = new ArrayList<>();
+        for (PassGrades grade : marks) {
+            if (predicate.test(grade)) {
+                filteredGrades.add(grade);
+            }
+        }
+        return filteredGrades;    }
     public String toString(){
         return name+" -> "+mark;
     }

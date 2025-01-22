@@ -1,7 +1,7 @@
 package DAY15;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class FindWithLetter {
     String name;
@@ -18,7 +18,13 @@ public class FindWithLetter {
     }
 
     public static List<String> letterss(List<String> names, char letter){
-        return names.stream().filter(s->s.startsWith(String.valueOf(letter))).collect(Collectors.toList());
+        List<String> filteredNames = new ArrayList<>();
+        for (String name : names) {
+            if (name.startsWith(String.valueOf(letter))) {
+                filteredNames.add(name);
+            }
+        }
+        return filteredNames;
     }
     public static void main(String[] args) {
         List<String> names=List.of("Luffy","Zoro","Golu","Guru");

@@ -1,8 +1,8 @@
 package DAY16;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class EvenFilter {
     public EvenFilter(){
@@ -12,8 +12,13 @@ public class EvenFilter {
         System.out.println("Output ="+newEven);
     }
     public List<Integer> printEven(List<Integer> marks, Predicate<Integer>predicate){
-        return marks.stream().filter(predicate).collect(Collectors.toList());
+        List<Integer> evenNumbers = new ArrayList<>();
+        for (Integer mark : marks) {
+            if (predicate.test(mark)) {
+                evenNumbers.add(mark);
             }
+        }
+        return evenNumbers;            }
     public static void main(String[] args) {
         new EvenFilter();
     }

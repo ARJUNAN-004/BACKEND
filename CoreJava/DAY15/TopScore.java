@@ -1,10 +1,6 @@
 package DAY15;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
+import java.util.*;
 
 public class TopScore {
     String name,dept;
@@ -23,6 +19,17 @@ public class TopScore {
         new TopScore("Zoro","IT",8.5),
         new TopScore("Sanji","IT",8.8),
         new TopScore("Law","CSE",7.7));
-        score.stream().collect(Collectors.groupingBy(s->s.dept, Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparingDouble(s->s.gpa)), Optional::get))).values().forEach(System.out::println);
+        Map<String, TopScore> topScores = new HashMap<>();
+
+        for (TopScore s : score) {
+            String dept = s.dept;
+            if (!topScores.containsKey(dept) || s.gpa > topScores.get(dept).gpa) {
+                topScores.put(dept, s);
+            }
+        }
+
+        for (TopScore topScore : topScores.values()) {
+            System.out.println(topScore);
+        }
     }
 }

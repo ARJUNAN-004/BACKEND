@@ -1,11 +1,15 @@
 package DAY15;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Transform {
     public static List<String> namess(List<String>names){
-        return names.stream().map(name->"Student = "+name.toUpperCase()).collect(Collectors.toList());
+        List<String> transformedNames = new ArrayList<>();
+        for (String name : names) {
+            transformedNames.add("Student = " + name.toUpperCase());
+        }
+        return transformedNames;
     }
     public static void main(String[] args) {
         List<String> names=List.of("Joyboy","Teddy","Green","Negan");

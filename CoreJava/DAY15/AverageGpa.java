@@ -14,14 +14,6 @@ public class AverageGpa {
         return gpa;
     }
 
-    public void setGpa(double gpa) {
-        this.gpa = gpa;
-    }
-
-//    @Override
-//    public String toString() {
-//        return "AverageGpa{" + "gpa=" + gpa + '}';
-//    }
 
     public static double Average(List<AverageGpa> gp){
         double sum = 0.0;
