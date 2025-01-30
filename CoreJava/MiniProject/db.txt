@@ -1,0 +1,18 @@
+
+Student ID = 1
+Student Name = ARJUN
+Student Age = 12
+Student Grade = A
+Student Email = arjun@gmail.com
+----------------------------------------
+Student ID = 2
+Student Name = KAVIN
+Student Age = 13
+Student Grade = B
+Student Email = kavin@gmail.com
+----------------------------------------
+Student ID = 3
+Student Name = SANJ
+Student Age = 24
+Student Grade = A
+Student Email = sanj@gmail.com
