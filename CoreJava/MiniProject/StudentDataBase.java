@@ -297,10 +297,11 @@ public class StudentDataBase {
     }
 
     public static void main(String[] args) {
+                        System.out.println("----------------- STUDENT DATABASE MANAGEMENT -----------------");
         loadFromFile();
         while (true) {
             try {
-                System.out.println("1. Add Student\n2. Display Student\n3. Search by ID\n4. Update Student\n5. Delete Student\n6. Sort\n7. Save");
+                System.out.println("\n1. Add Student\n2. Display Student\n3. Search by ID\n4. Update Student\n5. Delete Student\n6. Sort\n7. Save");
                 System.out.println("Enter process =");
                 int choice = sc.nextInt();
                 switch (choice) {
