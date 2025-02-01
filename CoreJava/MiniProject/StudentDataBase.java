@@ -163,7 +163,7 @@ public class StudentDataBase {
             Optional<Student> upt = students.stream().filter(s -> s.getId() == newid).findFirst();
             if (upt.isEmpty()) {
                 System.out.println("No Student Found");
-                System.out.println("-------------------------------");
+                System.out.println("--------------------------------");
             } else {
                 System.out.println("Enter Student Name =");
                 String newname = sc.nextLine();
